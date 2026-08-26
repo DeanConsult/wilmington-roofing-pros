@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roofing Services | Wilmington Roofing Pros</title>
+  <link rel="canonical" href="https://www.wilmingtonroofingexperts.com/services/" />
+  <meta name="description" content="Wilmington Roofing Pros offers roof repair, roof replacement, residential and commercial roofing, emergency roofing, and more in Wilmington NC. Free estimates." />
+  <meta name="robots" content="index, follow" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --orange: #c05c1f; --orange-dark: #9a4010; --dark: #1c0e06; --white: #ffffff; --gray: #f5f6f8; --muted: #6b7280; --radius: 8px; --shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: #1a1a1a; background: var(--white); }
+    a { color: inherit; text-decoration: none; }
+    nav { background: var(--dark); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-brand { color: var(--white); font-weight: 800; font-size: 1.05rem; line-height: 1.2; }
+    .nav-brand span { color: #f0a870; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.92rem; font-weight: 500; }
+    .btn-call { background: var(--orange); color: var(--white); padding: 9px 20px; border-radius: var(--radius); font-weight: 700; font-size: 0.88rem; white-space: nowrap; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.6rem; color: var(--white); cursor: pointer; padding: 4px 8px; }
+    @media (max-width: 768px) {
+      .nav-links { display: flex; position: fixed; top: 64px; left: 0; right: 0; background: var(--dark); flex-direction: column; gap: 0; padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+      .nav-links.open { max-height: 320px; padding-top: 8px; padding-bottom: 8px; }
+      .nav-links a { display: block; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+      .btn-call { display: none; }
+      .hamburger { display: block; }
+    }
+    .ph { background: var(--dark); padding: 60px 24px; }
+    .ph-inner { max-width: 1100px; margin: 0 auto; }
+    .ph-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #f0a870; margin-bottom: 10px; }
+    .ph h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; color: var(--white); margin-bottom: 14px; }
+    .ph p { color: rgba(255,255,255,0.72); max-width: 580px; line-height: 1.75; }
+    .section { max-width: 1100px; margin: 0 auto; padding: 80px 24px; }
+    .section-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--orange); margin-bottom: 10px; }
+    .section-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--dark); margin-bottom: 14px; }
+    .section-sub { color: var(--muted); max-width: 600px; line-height: 1.75; margin-bottom: 48px; }
+    .services-list { display: flex; flex-direction: column; gap: 32px; }
+    .service-block { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; padding-bottom: 32px; border-bottom: 1px solid #e5e7eb; }
+    .service-block:last-child { border-bottom: none; }
+    @media (max-width: 768px) { .service-block { grid-template-columns: 1fr; } }
+    .service-block-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--orange); margin-bottom: 8px; }
+    .service-block h2 { font-size: 1.3rem; font-weight: 800; color: var(--dark); margin-bottom: 12px; }
+    .service-block p { color: var(--muted); line-height: 1.8; }
+    .service-block-aside { background: var(--gray); border-radius: 10px; padding: 24px; border-left: 4px solid var(--orange); }
+    .service-block-aside h3 { font-size: 0.92rem; font-weight: 700; color: var(--dark); margin-bottom: 12px; }
+    .service-block-aside ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .service-block-aside ul li { font-size: 0.87rem; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+    .service-block-aside ul li::before { content: ''; width: 6px; height: 6px; background: var(--orange); border-radius: 50%; flex-shrink: 0; }
+    .quick-list { background: var(--gray); padding: 60px 24px; }
+    .quick-inner { max-width: 1100px; margin: 0 auto; }
+    .quick-inner h2 { font-size: 1.4rem; font-weight: 800; color: var(--dark); margin-bottom: 28px; }
+    .quick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+    .quick-item { background: var(--white); border-radius: 8px; padding: 12px 16px; font-size: 0.87rem; font-weight: 600; color: var(--dark); border-left: 3px solid var(--orange); box-shadow: var(--shadow); }
+    .cta-band { background: var(--orange); padding: 60px 24px; text-align: center; }
+    .cta-band h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.82); max-width: 520px; margin: 0 auto 28px; }
+    .btn-white { display: inline-block; background: var(--white); color: var(--orange); padding: 14px 32px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; }
+    footer { background: var(--dark); padding: 48px 24px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    @media (max-width: 640px) { .footer-inner { grid-template-columns: 1fr; } }
+    .footer-brand { font-weight: 800; font-size: 1.05rem; color: var(--white); margin-bottom: 12px; }
+    .footer-brand span { color: #f0a870; }
+    .footer-desc { color: rgba(255,255,255,0.55); font-size: 0.85rem; line-height: 1.7; }
+    .footer-col h4 { color: rgba(255,255,255,0.5); font-size: 0.72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { color: rgba(255,255,255,0.7); font-size: 0.88rem; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .footer-bottom p { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+    .footer-bottom a { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand"><a href="/">Wilmington <span>Roofing Pros</span></a></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About Us</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/#contact">Free Estimate</a></li>
+    </ul>
+    <a href="tel:9109018360" class="btn-call">Call 910-901-8360</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<div class="ph">
+  <div class="ph-inner">
+    <p class="ph-label">What We Do</p>
+    <h1>Roofing Services in Wilmington NC</h1>
+    <p>From minor repairs to complete roof replacements, Wilmington Roofing Pros handles every type of residential and commercial roofing. Free inspections and written estimates on all work.</p>
+  </div>
+</div>
+
+<div class="section">
+  <p class="section-label">Our Services</p>
+  <h2 class="section-title">Full-Service Roofing in Wilmington NC</h2>
+  <p class="section-sub">We specialize in all types of roofing from residential to commercial. Whether you need a repair, a full replacement, or a free inspection, we are ready to help.</p>
+
+  <div class="services-list">
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Repair</p>
+        <h2>Roof Repair</h2>
+        <p>The need for a roof repair can come from any number of causes. Storm damage, overgrown trees, fallen trees, animals, and regular wear and tear are just a few reasons homeowners end up needing roof repair. Often homeowners only discover the problem when they see wet spots on their ceilings or walls after heavy rain. When you see signs like these, Wilmington Roofing Pros is the best place to call. We will be out quickly to provide honest, trustworthy roof repair to your home or business. We never try to talk you into more than you need.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Common Repair Causes</h3>
+        <ul>
+          <li>Storm and wind damage</li>
+          <li>Fallen or overgrown trees</li>
+          <li>Animal damage</li>
+          <li>Wear and tear over time</li>
+          <li>Roof leak &amp; moisture intrusion</li>
+          <li>Damaged or missing shingles</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Replacement</p>
+        <h2>Roof Replacement</h2>
+        <p>The lifespan of a roof can vary greatly &mdash; sometimes as little as 10 years, sometimes as long as 40. The most important factors are the quality of the initial installation and the materials used. Wilmington Roofing Pros will inspect your entire roof for you free of charge. After inspection, if our experts determine you need a new roof, we will provide you with a complete written estimate. Our close relationships with insurance companies often help homeowners get monetary assistance for the cost of a new roof installation.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Replacement Includes</h3>
+        <ul>
+          <li>Free full roof inspection</li>
+          <li>Written estimate with options</li>
+          <li>Insurance claim assistance</li>
+          <li>Complete removal of old roofing</li>
+          <li>All major roof materials available</li>
+          <li>Manufacturer-level warranty</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Installation</p>
+        <h2>Roof Installation</h2>
+        <p>Wilmington Roofing Pros has over 20 years of experience working in nearly every type of environment with all kinds of roofing. From residential to commercial, from rubber slate to asphalt shingles, we have been there and done that. A lesser experienced roofing company might not be up to the task for what you need. Roof installations that are not done properly can start seeing problems within the first 90 days. Call us first and let us do it right. Our crews are kept up to date through ongoing monthly training, and our managers oversee every project to ensure it is completed professionally and on time.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Installation Features</h3>
+        <ul>
+          <li>20+ years of installation experience</li>
+          <li>Monthly updated installer training</li>
+          <li>Management oversight on every project</li>
+          <li>Completed in a timely manner</li>
+          <li>Warranty included on all work</li>
+          <li>New construction &amp; replacement</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Residential</p>
+        <h2>Residential Roofing</h2>
+        <p>Whether you own a single-family home, a condo, or a townhome, Wilmington Roofing Pros has the expertise to handle your residential roofing needs. We work with all major roofing materials and styles, and we will help you choose the right option for your home and budget. Our team takes great care to protect your landscaping and property during the roofing process, and we clean up completely when the job is done.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Residential Roofing Types</h3>
+        <ul>
+          <li>Asphalt shingles</li>
+          <li>Architectural shingles</li>
+          <li>Wood shingles &amp; shake</li>
+          <li>Metal roofing</li>
+          <li>Tile roofing</li>
+          <li>Slate roofing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Commercial</p>
+        <h2>Commercial Roofing</h2>
+        <p>No matter what your commercial roofing needs are, we are more than ready to handle them. We have extensive experience with flat roofs, low-slope systems, and all types of commercial roofing applications. Commercial roofing requires specialized expertise &mdash; the wrong materials or installation approach can lead to costly problems. With Wilmington Roofing Pros, you get a team that has done commercial roofing right for over two decades.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Commercial Services</h3>
+        <ul>
+          <li>Flat &amp; low-slope roofing</li>
+          <li>Membrane roofing systems</li>
+          <li>Built-up roofing (BUR)</li>
+          <li>Commercial roof repair</li>
+          <li>Commercial roof replacement</li>
+          <li>Multi-unit &amp; retail buildings</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Types of Roofs</p>
+        <h2>Asphalt, Tile, Metal &amp; More</h2>
+        <p>There are numerous kinds of roofs and roofing products available. The weather in North Carolina can sometimes be unpredictable, so it is important to understand the kind of roofing you are getting. Styles like tile, wood, metal, and slate offer various looks and benefits, and they vary in grade and quality. The higher quality roof you install, the longer it will last &mdash; and the longer the warranty. Our professionals can advise you on which roof type will best suit your home or business.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Roof Types We Install</h3>
+        <ul>
+          <li>Asphalt shingles</li>
+          <li>Tile roofing</li>
+          <li>Metal roofing</li>
+          <li>Wood roofing</li>
+          <li>Slate roofing</li>
+          <li>Flat roofing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">24-Hour Service</p>
+        <h2>Emergency Roofing</h2>
+        <p>Roofing emergencies happen without warning &mdash; a severe storm rolls through and suddenly you have a damaged or missing section of roof with no protection from the elements. Wilmington Roofing Pros has 24-hour emergency roofing services as needed. We can get out to your property quickly, secure the area, and provide emergency tarping to prevent further water intrusion until permanent repairs can be made. Call us anytime.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Emergency Response</h3>
+        <ul>
+          <li>Available 24 hours a day</li>
+          <li>Emergency tarping &amp; coverage</li>
+          <li>Storm damage response</li>
+          <li>Prevent further water damage</li>
+          <li>Rapid dispatch in Wilmington NC</li>
+          <li>Insurance claim guidance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Inspections</p>
+        <h2>Roof Inspections &amp; Estimates</h2>
+        <p>Not sure if your roof needs repair or replacement? We offer free roof inspections for homeowners and business owners in the Wilmington NC area. Our experienced roofers will climb up, inspect the entire roof, and give you an honest assessment. If work is needed, we will provide a complete written estimate. We can typically schedule an inspection within 24&ndash;48 hours of your call.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Inspection Includes</h3>
+        <ul>
+          <li>Full roof surface inspection</li>
+          <li>Flashing &amp; seals check</li>
+          <li>Gutter &amp; drainage review</li>
+          <li>Attic ventilation assessment</li>
+          <li>Written estimate if needed</li>
+          <li>24&ndash;48 hour scheduling</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Claims</p>
+        <h2>Insurance Claims Assistance</h2>
+        <p>Filing an insurance claim for storm or wind damage can be overwhelming. Wilmington Roofing Pros has close relationships with several insurance companies, making the filing process as easy as possible for our customers. We can help you document the damage, communicate with your insurance adjuster, and make sure you get the coverage you are entitled to. Let us handle the paperwork so you can focus on getting your home back to normal.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Claim Support</h3>
+        <ul>
+          <li>Storm damage documentation</li>
+          <li>Insurance adjuster coordination</li>
+          <li>Preferred contractor relationships</li>
+          <li>Honest damage assessment</li>
+          <li>No surprise charges</li>
+          <li>We work with most carriers</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="quick-list">
+  <div class="quick-inner">
+    <h2>All Services at a Glance</h2>
+    <div class="quick-grid">
+      <div class="quick-item">Roof Repair</div>
+      <div class="quick-item">Roof Replacement</div>
+      <div class="quick-item">Roof Installation</div>
+      <div class="quick-item">Residential Roofing</div>
+      <div class="quick-item">Commercial Roofing</div>
+      <div class="quick-item">Asphalt Roofing</div>
+      <div class="quick-item">Tile Roofing</div>
+      <div class="quick-item">Metal Roofing</div>
+      <div class="quick-item">Flat Roofing</div>
+      <div class="quick-item">Wood Roofing</div>
+      <div class="quick-item">Slate Roofing</div>
+      <div class="quick-item">Storm Damage Repair</div>
+      <div class="quick-item">Free Roof Inspection</div>
+      <div class="quick-item">Emergency Roofing</div>
+      <div class="quick-item">Leak Detection &amp; Repair</div>
+      <div class="quick-item">Gutter Inspection</div>
+      <div class="quick-item">Ventilation &amp; Insulation</div>
+      <div class="quick-item">Insurance Claim Assistance</div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-band">
+  <h2>Ready to Get Your Roof Taken Care Of?</h2>
+  <p>Call today for a free roof inspection and written estimate. We can usually get to your home within 24&ndash;48 hours.</p>
+  <a href="tel:9109018360" class="btn-white">Call 910-901-8360</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Wilmington <span>Roofing Pros</span></div>
+      <p class="footer-desc">Residential and commercial roofing in Wilmington NC. 20+ years of experience. Free inspections and estimates. 24-hour emergency service.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/#contact">Free Estimate</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/services/">Roof Repair</a></li>
+        <li><a href="/services/">Roof Replacement</a></li>
+        <li><a href="/services/">Commercial Roofing</a></li>
+        <li><a href="/services/">Emergency Roofing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="yr"></span> Wilmington Roofing Pros. All rights reserved.</p>
+    <div style="display:flex;gap:16px;">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/resources/">Resources</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementById("navLinks").classList.toggle("open");
+  });
+</script>
+</body>
+</html>
