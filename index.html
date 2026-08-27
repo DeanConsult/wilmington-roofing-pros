@@ -103,6 +103,7 @@
 
     /* HERO */
     .hero { position: relative; background: var(--dark); overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background-image: url('images/roofer-installing-1.png'); background-size: cover; background-position: center; opacity: 0.25; }
     .hero-split { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 400px; min-height: 560px; }
     .hero-content { padding: 60px 48px 60px 24px; display: flex; flex-direction: column; justify-content: center; }
     .hero-badge { display: inline-block; background: rgba(192,92,31,0.25); color: #f0a870; border: 1px solid rgba(240,168,112,0.4); border-radius: 999px; padding: 5px 16px; font-size: 0.8rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 20px; align-self: flex-start; }
@@ -158,7 +159,10 @@
     .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
     .service-card { background: var(--gray); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); transition: transform .25s; }
     .service-card:hover { transform: translateY(-4px); }
-    .service-body { padding: 24px 22px 26px; border-top: 4px solid var(--orange); }
+    .service-img { height: 190px; overflow: hidden; background: rgba(192,92,31,0.1); }
+    .service-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+    .service-card:hover .service-img img { transform: scale(1.04); }
+    .service-body { padding: 20px 22px 24px; border-top: 4px solid var(--orange); }
     .service-body h3 { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
     .service-body p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
 
@@ -257,6 +261,7 @@
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-bg"></div>
   <div class="hero-split">
     <div class="hero-content">
       <span class="hero-badge">&#128205; Wilmington NC</span>
@@ -344,6 +349,7 @@
   <div class="services-grid">
 
     <div class="service-card">
+      <div class="service-img"><img src="images/depositphotos_67354221-stock-photo-roof-repair.jpg" alt="Roof repair Wilmington NC" loading="lazy" /></div>
       <div class="service-body">
         <h3>Roof Repair</h3>
         <p>Storm damage, leaks, missing shingles, and general wear and tear &mdash; whatever the cause, we repair it right. We provide a written estimate before any work begins and never recommend more than what is actually needed.</p>
@@ -351,6 +357,7 @@
     </div>
 
     <div class="service-card">
+      <div class="service-img"><img src="images/roofer-installing-2.png" alt="Roof replacement Wilmington NC" loading="lazy" /></div>
       <div class="service-body">
         <h3>Roof Replacement</h3>
         <p>When a roof reaches the end of its life, a full replacement is the right call. We offer free inspections, provide complete written estimates, and can help you navigate insurance claims for storm or wind damage.</p>
@@ -358,6 +365,7 @@
     </div>
 
     <div class="service-card">
+      <div class="service-img"><img src="images/istockphoto-482992799-612x612.jpg" alt="Residential roofing Wilmington NC" loading="lazy" /></div>
       <div class="service-body">
         <h3>Residential Roofing</h3>
         <p>We work on homes of all sizes and styles. Whether you need a simple repair or a brand new roof, our experienced team handles every residential roofing project with care and professionalism.</p>
@@ -365,6 +373,7 @@
     </div>
 
     <div class="service-card">
+      <div class="service-img"><img src="images/roofing-shingles-closeup.png" alt="Commercial roofing Wilmington NC" loading="lazy" /></div>
       <div class="service-body">
         <h3>Commercial Roofing</h3>
         <p>Flat roofs, low-slope systems, commercial repairs and replacements &mdash; we have decades of experience with all types of commercial roofing in the Wilmington NC area.</p>
@@ -372,6 +381,7 @@
     </div>
 
     <div class="service-card">
+      <div class="service-img"><img src="images/istockphoto-1173628350-612x612.jpg" alt="Asphalt tile metal roofing Wilmington NC" loading="lazy" /></div>
       <div class="service-body">
         <h3>Asphalt, Tile &amp; Metal Roofing</h3>
         <p>From asphalt shingles to tile, metal, wood, and slate, we install and repair all major roof types. Our team can help you choose the right material for your climate, budget, and aesthetic.</p>
@@ -379,6 +389,7 @@
     </div>
 
     <div class="service-card">
+      <div class="service-img"><img src="images/istockphoto-1357777445-612x612.jpg" alt="Emergency roofing Wilmington NC" loading="lazy" /></div>
       <div class="service-body">
         <h3>Emergency Roofing</h3>
         <p>A roofing emergency can&rsquo;t wait. We offer 24-hour emergency service for storm damage, sudden leaks, and other urgent situations. Call us anytime &mdash; we&rsquo;ll get out to you quickly.</p>
